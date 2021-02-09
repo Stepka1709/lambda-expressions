@@ -1,6 +1,5 @@
 package console;
 
-
 public class LambdaAppThree {
 
     public void start() {
