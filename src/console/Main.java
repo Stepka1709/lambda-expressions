@@ -14,5 +14,8 @@ public class Main {
 
         LambdaAppFour lFour = new LambdaAppFour();
         lFour.start();
+
+        LambdaAppFive lFive = new LambdaAppFive();
+        lFive.start();
     }
 }
