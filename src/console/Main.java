@@ -8,5 +8,8 @@ public class Main {
 
         LambdaAppTwo lTwo = new LambdaAppTwo();
         lTwo.start();
+
+        LambdaAppThree lThree = new LambdaAppThree();
+        lThree.start();
     }
 }
