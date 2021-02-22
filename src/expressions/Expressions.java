@@ -1,9 +1,9 @@
 package expressions;
 
-interface BinaryOperator<T extends Comparable> {
+interface BinaryOperator<T> {
     T calculate(T... num);
 }
 
-interface Predicate<T extends Comparable> {
+interface Predicate<T> {
     boolean function(T... num);
 }
