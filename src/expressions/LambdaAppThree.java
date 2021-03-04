@@ -1,12 +1,14 @@
 package expressions;
 
+import java.util.function.BinaryOperator;
+
 public class LambdaAppThree {
 
     public void start() {
-        BinaryOperator<Double> max = (num) -> num[0] < num[1] ? num[0] : num[1];
-        System.out.println("Max: " + max.calculate(1.1, 2.1));
+        BinaryExpression<String> max = (w) -> w[0].compareTo(w[1]) > 0 ? w[0] : w[1];
+        System.out.println("String max: " + max.calculate("qwert", "qwerty"));
 
-        BinaryOperator<Integer> min = (num) -> num[0] < num[1] ? num[0] : num[1];
-        System.out.println("Min: " + min.calculate(3, 9));
+        BinaryExpression<String> min = (w) -> w[0].compareTo(w[1]) < 0 ? w[0] : w[1];
+        System.out.println("String min: " + min.calculate("qwert", "qwerty"));
     }
 }

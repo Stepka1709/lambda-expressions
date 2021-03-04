@@ -3,7 +3,7 @@ package expressions;
 public class LambdaAppFive {
 
     public void start() {
-        BinaryOperator<Double> max = (num) -> {
+        BinaryExpression<Double> max = (num) -> {
             if (num.length > 3) return null;
             if (num.length == 3) {
                 if (num[0] < num[1]) num[0] = num[1];
