@@ -1,6 +1,5 @@
 package expressions;
 
-
 import java.util.function.Predicate;
 
 public class LambdaAppOne {
@@ -9,7 +8,7 @@ public class LambdaAppOne {
         BinaryExpression<Integer> sum = (num) -> num[0] + num[1] + num[2];
         System.out.println("Numbers sum: " + sum.calculate(2, 2, 2));
 
-        BinaryExpression<Integer> mul = (num) -> num[0] * num[2];
+        BinaryExpression<Integer> mul = (num) -> num[0] * num[1] * num[2];
         System.out.println("Numbers multiplication: " + mul.calculate(2, 2, 2));
 
         BinaryExpression<Integer> fact = (num) -> {

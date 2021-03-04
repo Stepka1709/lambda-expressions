@@ -1,7 +1,5 @@
 package expressions;
 
-import java.util.function.BinaryOperator;
-
 public class LambdaAppFour {
 
     public void start() {
